@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #map {
+            height: 80%;
+            width: 70%;
+            margin: 0 !important;
+            float: left;
+        }
+
+        #result_box {
+            display: inline-block;
+            margin-left: 30px;
+        }
+        #map-container {
+            display: inline;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <title>Maps Example</title>
+</head>
+
+<body>
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+
+
+    <div id="result_box">
+        <h3>Resultado: </h3>
+        <h4 id="result_area"></h4>
+    </div>
+</body>
+<script src="https://maps.googleapis.com/maps/api/js?&libraries=drawing&key=AIzaSyA57BvkklMap6FNy8q3nVYybxMteEsUYME&callback=initMap"
+    async defer></script>
+<script src="./js/useful.js"></script>
+<script src="./js/MapsLib.js"></script>
+<script src="./js/LatLng.js"></script>
+<script src="./js/script.js"></script>
+
+</html>
